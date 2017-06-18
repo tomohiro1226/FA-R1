@@ -1,0 +1,13 @@
+#Makefile
+Test: label_mapping.o test_LabelMain.o
+		gcc -o Test label_mapping.o test_LabelMain.o
+
+label_mapping.o: ./../label_mapping.c
+		gcc -c ./../label_mapping.c
+
+test_LabelMain.o: ./test_LabelMain.c
+		gcc -c ./test_LabelMain.c
+
+.PHONY: clean
+clean:
+		rm -rf label_mapping.o test_LabelMain.o Test

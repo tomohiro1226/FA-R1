@@ -1,0 +1,13 @@
+#Makefile
+Test: test_opENmain.o Registers_encode.o label_mapping.o \
+			format.o ram_mapping.o opCodeEncoder.o
+		gcc -o Test test_opENmain.o Registers_encode.o \
+			label_mapping.o format.o ram_mapping.o opCodeEncoder.o
+
+test_opENmain.o: ./test_opENmain.c
+		gcc -c ./test_opENmain.c
+
+Registers_encode.o: ./../../Reg_EN/Registers_encode.c
+		gcc -c ./../../Reg_EN/Registers_encode.c
+
+format.o
