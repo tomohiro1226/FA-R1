@@ -50,3 +50,6 @@ x:なにもなし0とする。
 - Mapping  :  機械語生成時のメモリ番地を決めている
 - opcode_EN  :  ソースプログラムから受け取った命令子を機械語にする
 - Reg_EN  :  opcode_ENから呼ばれ、レジスタIDを返す
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1MTM2NTg5OF19
+-->
